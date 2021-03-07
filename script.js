@@ -34,7 +34,6 @@ document.getElementById('btnOver').addEventListener('click', function () {
             orderNumber++;
             orderNumberField.innerText = orderNumber;
             answerField.innerText = `Вы загадали число ${answerNumber }?`;
-            
         }
     }
 })
@@ -50,10 +49,11 @@ document.getElementById('btnLess').addEventListener('click', function () {
             gameRun = false;
             
         } else {
-            answerNumber = Math.floor(maxValue / 2)
-
-            if(answerNumber === minValue){
-                answerField.innerText = 'Это число -' + minValue;
+            maxValue = answerNumber;
+            answerNumber  = Math.floor((maxValue - minValue) / 2);
+            maxValue = maxValue / 2
+            if(answerNumber === 0){
+                answerField.innerText = `Это число - 0`;;
                 gameRun = false;
             }
             else{
