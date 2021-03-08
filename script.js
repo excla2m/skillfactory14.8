@@ -49,7 +49,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
             gameRun = false;
             
         } else {
-            maxValue = answerNumber;
+            maxValue = answerNumber - 1
             answerNumber  = Math.floor((maxValue - minValue) / 2);
             maxValue = maxValue / 2
             if(answerNumber === 0){
