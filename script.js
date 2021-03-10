@@ -78,3 +78,7 @@ document.getElementById('btnEqual').addEventListener('click', function () {
         gameRun = false;
     }
 })
+
+document.getElementById('btnRetry').addEventListener('click', function () {
+    
+})
