@@ -46,7 +46,7 @@ document.getElementById('btnOver').addEventListener('click', function OverFunc()
             answerField.innerText = answerPhrase;
             gameRun = false;
         } else {
-            minValue = answerNumber
+            minValue = answerNumber + 1
             answerNumber = Math.floor((minValue + maxValue) / 2);
             orderNumber++;
             orderNumberField.innerText = orderNumber;
